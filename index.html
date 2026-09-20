@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kisi-Kisi STS Ganjil 3A — MI Al Iman 🎈</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --pink: #ff8fab;
+      --purple: #b197fc;
+      --blue: #74c0fc;
+      --cyan: #66d9e8;
+      --green: #8ce99a;
+      --yellow: #ffe066;
+      --orange: #ffa94d;
+      --red: #ff8787;
+    }
+
+    body {
+      font-family: 'Fredoka', 'Baloo 2', sans-serif;
+      background: linear-gradient(135deg, #fff0f6 0%, #e7f5ff 50%, #f3f0ff 100%);
+      color: #2b2d42;
+      line-height: 1.6;
+      padding: 1.5rem 1rem;
+      min-height: 100vh;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    /* Background floating shapes */
+    body::before, body::after {
+      content: "";
+      position: fixed;
+      border-radius: 50%;
+      z-index: 0;
+      pointer-events: none;
+      filter: blur(2px);
+    }
+    body::before {
+      width: 220px; height: 220px;
+      background: radial-gradient(circle, #ffd6e7, transparent 70%);
+      top: -60px; left: -60px;
+      animation: floaty 8s ease-in-out infinite;
+    }
+    body::after {
+      width: 280px; height: 280px;
+      background: radial-gradient(circle, #d0ebff, transparent 70%);
+      bottom: -80px; right: -80px;
+      animation: floaty 10s ease-in-out infinite reverse;
+    }
+
+    @keyframes floaty {
+      0%, 100% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(-30px) rotate(10deg); }
+    }
+
+    .glass-container {
+      max-width: 1400px;
+      margin: 0 auto;
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 48px;
+      box-shadow: 0 20px 50px -15px rgba(180, 130, 220, 0.35), 0 0 0 6px rgba(255,255,255,0.6);
+      padding: 2rem 2rem 3rem;
+      border: 4px dashed #ffd6e7;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Hero */
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 4px dotted #b197fc;
+      gap: 1rem;
+    }
+
+    .hero-title h1 {
+      font-family: 'Baloo 2', cursive;
+      font-size: 2.6rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      background: linear-gradient(135deg, #ff6b9d, #b197fc, #74c0fc);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      line-height: 1.15;
+      text-shadow: 3px 3px 0 rgba(255, 224, 240, 0.5);
+    }
+
+    .hero-title h1 .emoji {
+      display: inline-block;
+      font-size: 2.2rem;
+      animation: bounce 1.6s infinite;
+      -webkit-text-fill-color: initial;
+      color: initial;
+      background: none;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0) rotate(-5deg); }
+      50% { transform: translateY(-10px) rotate(5deg); }
+    }
+
+    .hero-title .subhead {
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: #5a5a7a;
+      margin-top: 0.4rem;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+    }
+
+    .badge-modern {
+      background: linear-gradient(135deg, #fff5f9, #ffe8f2);
+      padding: 0.4rem 1.1rem;
+      border-radius: 100px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #b23a75;
+      box-shadow: 0 4px 0 #ffd6e7;
+      border: 2px solid #ffb8d6;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .badge-modern.blue { background: linear-gradient(135deg, #eef8ff, #d9edff); color: #1864ab; box-shadow: 0 4px 0 #b8d9ff; border-color: #9ecbff; }
+    .badge-modern.yellow { background: linear-gradient(135deg, #fffbe6, #fff2c2); color: #a5741b; box-shadow: 0 4px 0 #ffe066; border-color: #ffd43b; }
+
+    .hero-stats {
+      display: flex;
+      gap: 1rem;
+      background: linear-gradient(135deg, #fff8fb, #f0ebff);
+      padding: 0.9rem 1.5rem;
+      border-radius: 60px;
+      border: 3px solid #e0d5ff;
+      box-shadow: 0 6px 0 #d8ccff;
+    }
+
+    .stat-item { text-align: center; padding: 0 0.4rem; }
+
+    .stat-num {
+      font-family: 'Baloo 2', cursive;
+      font-size: 2rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, #ff6b9d, #b197fc);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      line-height: 1;
+    }
+
+    .stat-label {
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #8a7fb8;
+    }
+
+    /* Tabs — bubble style */
+    .tab-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.7rem;
+      margin-bottom: 2rem;
+    }
+
+    .tab-btn {
+      font-family: 'Baloo 2', cursive;
+      background: white;
+      border: 3px solid #e0d5ff;
+      padding: 0.8rem 1.5rem;
+      border-radius: 30px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: #4a4a6a;
+      cursor: pointer;
+      transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+      box-shadow: 0 5px 0 #d8ccff;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      letter-spacing: 0.01em;
+      position: relative;
+    }
+
+    .tab-btn i {
+      font-size: 1.1rem;
+      color: #b197fc;
+      transition: transform 0.2s;
+    }
+
+    .tab-btn:hover {
+      transform: translateY(-4px) scale(1.03);
+      box-shadow: 0 9px 0 #d8ccff;
+      background: #fdfbff;
+    }
+
+    .tab-btn:hover i { transform: rotate(-12deg) scale(1.15); }
+
+    .tab-btn.active {
+      background: linear-gradient(135deg, #ff8fab, #b197fc);
+      color: white;
+      box-shadow: 0 6px 0 #8b6ed6;
+      border-color: #a48cff;
+      transform: translateY(-2px);
+    }
+
+    .tab-btn.active i { color: #fff3a3; }
+
+    /* mini logo 18 */
+    .mini-logo-18 {
+      width: 30px; height: 30px;
+      display: inline-flex;
+      align-items: center; justify-content: center;
+      background: linear-gradient(135deg, #0ea5e9, #06b6d4);
+      border-radius: 10px;
+      padding: 3px;
+      transition: transform 0.3s;
+      box-shadow: 0 3px 0 #0284c7;
+    }
+    .tab-btn:hover .mini-logo-18 { transform: rotate(-8deg) scale(1.12); }
+    .tab-btn.active .mini-logo-18 { background: linear-gradient(135deg, #ffe066, #fbbf24); box-shadow: 0 3px 0 #d97706; }
+
+    /* Panels */
+    .panel { display: none; animation: popIn 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); }
+    .panel.active { display: block; }
+
+    @keyframes popIn {
+      from { opacity: 0; transform: scale(0.96) translateY(12px); }
+      to { opacity: 1; transform: scale(1) translateY(0); }
+    }
+
+    /* Subject header */
+    .subject-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 1.2rem;
+      gap: 1rem;
+      background: linear-gradient(135deg, #fff9fc, #f3f0ff);
+      padding: 1rem 1.5rem;
+      border-radius: 28px;
+      border: 3px dashed #e0d5ff;
+    }
+
+    .subject-title {
+      font-family: 'Baloo 2', cursive;
+      font-size: 1.9rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      color: #5a3ba8;
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+    }
+
+    .subject-title i {
+      color: #ff6b9d;
+      font-size: 2rem;
+      filter: drop-shadow(0 3px 0 rgba(255, 143, 171, 0.3));
+    }
+
+    .pill-info {
+      background: white;
+      padding: 0.5rem 1.1rem;
+      border-radius: 40px;
+      font-weight: 700;
+      font-size: 0.82rem;
+      color: #5a3ba8;
+      border: 2px solid #d8ccff;
+      display: flex;
+      gap: 0.9rem;
+      flex-wrap: wrap;
+      box-shadow: 0 3px 0 #e8e0ff;
+    }
+
+    /* Table */
+    .table-wrapper {
+      overflow-x: auto;
+      border-radius: 28px;
+      background: white;
+      border: 3px solid #e0d5ff;
+      box-shadow: 0 10px 0 #ede7ff, 0 18px 30px -12px rgba(150, 120, 220, 0.25);
+      margin-bottom: 1.5rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.88rem;
+      min-width: 900px;
+    }
+
+    th {
+      font-family: 'Baloo 2', cursive;
+      background: linear-gradient(135deg, #ffe8f2, #ede7ff);
+      font-weight: 700;
+      color: #5a3ba8;
+      padding: 0.9rem 1rem;
+      text-align: left;
+      border-bottom: 3px solid #e0d5ff;
+      white-space: nowrap;
+      font-size: 0.82rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    td {
+      padding: 0.9rem 1rem;
+      border-bottom: 2px dashed #f0ebff;
+      color: #333355;
+      vertical-align: top;
+    }
+
+    tr:last-child td { border-bottom: none; }
+    tr:hover td { background: #fffafd; }
+    tr:nth-child(even) td { background: #fdfcff; }
+
+    .badge-level {
+      display: inline-block;
+      padding: 0.25rem 0.7rem;
+      border-radius: 50px;
+      font-size: 0.7rem;
+      font-weight: 800;
+      white-space: nowrap;
+      border: 2px solid;
+    }
+    .badge-level.c1 { background: #d0ebff; color: #1864ab; border-color: #a5d8ff; }
+    .badge-level.c2 { background: #d3f9d8; color: #2b8a3e; border-color: #b2f2bb; }
+    .badge-level.c3 { background: #fff3bf; color: #a5741b; border-color: #ffe066; }
+    .badge-level.c4 { background: #ffd8a8; color: #b3541e; border-color: #ffc078; }
+
+    .note {
+      font-size: 0.88rem;
+      color: #5a3ba8;
+      background: linear-gradient(135deg, #fffbe6, #fff5f9);
+      padding: 1rem 1.5rem;
+      border-radius: 24px;
+      border: 3px dashed #ffe066;
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      font-weight: 500;
+    }
+    .note i {
+      color: #ff922b;
+      font-size: 1.6rem;
+      animation: bounce 2s infinite;
+    }
+
+    /* ===== SBP HERO LOGO ===== */
+    .sbp-logo-hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 2rem;
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0c4a6e 100%);
+      border-radius: 36px;
+      padding: 2rem 2.5rem;
+      margin-bottom: 2rem;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 20px 0 #083d5c, 0 30px 50px -15px rgba(6, 182, 212, 0.5);
+      border: 4px solid #22d3ee;
+    }
+
+    .sbp-logo-hero::before {
+      content: "";
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(circle at 20% 20%, rgba(14, 165, 233, 0.3), transparent 40%),
+        radial-gradient(circle at 80% 80%, rgba(6, 182, 212, 0.25), transparent 45%),
+        radial-gradient(circle at 60% 10%, rgba(56, 189, 248, 0.2), transparent 35%);
+      pointer-events: none;
+    }
+
+    .sbp-logo-wrap {
+      flex-shrink: 0;
+      position: relative;
+      z-index: 2;
+      filter: drop-shadow(0 12px 30px rgba(6, 182, 212, 0.6));
+      animation: floatLogo 4s ease-in-out infinite;
+    }
+
+    @keyframes floatLogo {
+      0%, 100% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(-12px) rotate(3deg); }
+    }
+
+    .sbp-text { position: relative; z-index: 2; color: #e0f2fe; flex: 1; min-width: 240px; }
+
+    .sbp-text h2 {
+      font-family: 'Baloo 2', cursive;
+      font-size: 2.2rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      background: linear-gradient(90deg, #ffffff, #7dd3fc, #38bdf8);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      margin-bottom: 0.4rem;
+    }
+
+    .sbp-text p { font-size: 0.98rem; color: #bae6fd; opacity: 0.95; max-width: 520px; margin-bottom: 0.9rem; }
+
+    .sbp-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+
+    .sbp-tag {
+      background: rgba(14, 165, 233, 0.2);
+      border: 2px solid rgba(56, 189, 248, 0.5);
+      color: #7dd3fc;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 0.35rem 0.9rem;
+      border-radius: 100px;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .sbp-tag i { font-size: 0.75rem; color: #38bdf8; }
+
+    .logo-18-svg { width: 190px; height: 190px; display: block; }
+
+    /* Responsive */
+    @media (max-width: 700px) {
+      .glass-container { padding: 1.3rem; border-radius: 32px; }
+      .hero-title h1 { font-size: 1.8rem; }
+      .hero-stats { padding: 0.6rem 1.1rem; }
+      .stat-num { font-size: 1.5rem; }
+      .subject-title { font-size: 1.4rem; }
+      .tab-btn { padding: 0.65rem 1.1rem; font-size: 0.82rem; }
+      .sbp-logo-hero { padding: 1.5rem; gap: 1.2rem; }
+      .logo-18-svg { width: 130px; height: 130px; }
+      .sbp-text h2 { font-size: 1.5rem; }
+    }
+
+    @media (max-width: 480px) {
+      body { padding: 0.6rem; }
+      .glass-container { padding: 1rem; }
+      .hero { flex-direction: column; align-items: flex-start; }
+      .hero-stats { width: 100%; justify-content: space-around; }
+    }
+
+    ::-webkit-scrollbar { width: 10px; height: 10px; }
+    ::-webkit-scrollbar-track { background: #f8f0ff; border-radius: 10px; }
+    ::-webkit-scrollbar-thumb { background: linear-gradient(135deg, #ff8fab, #b197fc); border-radius: 10px; border: 2px solid #f8f0ff; }
+    ::-webkit-scrollbar-thumb:hover { background: #b197fc; }
+  </style>
+</head>
+<body>
+<div class="glass-container">
+  <!-- Hero -->
+  <div class="hero">
+    <div class="hero-title">
+      <h1><span class="emoji">🎈</span> Kisi-Kisi STS Ganjil <span class="emoji">🌈</span></h1>
+      <div class="subhead">
+        <span class="badge-modern"><i class="fas fa-school"></i> MI Al Iman</span>
+        <span class="badge-modern blue"><i class="fas fa-users"></i> Kelas 3A</span>
+        <span class="badge-modern yellow"><i class="fas fa-calendar-alt"></i> 2026/2027</span>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-item">
+        <div class="stat-num">7</div>
+        <div class="stat-label">Mapel</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">30</div>
+        <div class="stat-label">Soal</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">210</div>
+        <div class="stat-label">Total</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tab navigation -->
+  <div class="tab-nav">
+    <button class="tab-btn active" data-panel="akidah"><i class="fas fa-heart"></i> Akidah Akhlak</button>
+    <button class="tab-btn" data-panel="arab"><i class="fas fa-language"></i> Bahasa Arab</button>
+    <button class="tab-btn" data-panel="fikih"><i class="fas fa-mosque"></i> Fikih</button>
+    <button class="tab-btn" data-panel="quran"><i class="fas fa-quran"></i> Al-Qur'an Hadits</button>
+    <button class="tab-btn" data-panel="ski"><i class="fas fa-landmark"></i> SKI</button>
+    <button class="tab-btn" data-panel="inggris"><i class="fas fa-flag-usa"></i> Bahasa Inggris</button>
+    <button class="tab-btn" data-panel="pjok"><i class="fas fa-running"></i> PJOK</button>
+    <button class="tab-btn sbp-tab" data-panel="sbp">
+      <span class="mini-logo-18">
+        <svg viewBox="0 0 32 32" width="22" height="22">
+          <defs>
+            <linearGradient id="miniGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#ffffff"/>
+              <stop offset="100%" stop-color="#e0f2fe"/>
+            </linearGradient>
+          </defs>
+          <path d="M 9 7 L 9 25" stroke="url(#miniGrad)" stroke-width="2.6" stroke-linecap="round" fill="none"/>
+          <path d="M 6 10 L 9 7" stroke="url(#miniGrad)" stroke-width="2.6" stroke-linecap="round" fill="none"/>
+          <circle cx="21" cy="12" r="4" stroke="url(#miniGrad)" stroke-width="2.4" fill="none"/>
+          <circle cx="21" cy="21" r="4.6" stroke="url(#miniGrad)" stroke-width="2.4" fill="none"/>
+          <path d="M 25 5 L 25 9 M 23 7 L 27 7" stroke="#bae6fd" stroke-width="1.6" stroke-linecap="round"/>
+        </svg>
+      </span>
+      SBP
+    </button>
+  </div>
+
+  <!-- ============ AKIDAH AKHLAK ============ -->
+  <div class="panel active" id="panel-akidah">
+    <div class="subject-header">
+      <div class="subject-title"><i class="fas fa-heart"></i> Akidah Akhlak</div>
+      <div class="pill-info"><span>📝 30 butir</span><span>✏️ PG 15 · Isian 10 · Uraian 5</span></div>
+    </div>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr><th>No</th><th>Materi / Kompetensi</th><th>Indikator Soal</th><th>Level</th><th>Bentuk</th><th>No. Soal</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>Syukur Nikmat</td><td>Memilih sikap syukur saat menerima uang saku</td><td><span class="badge-level c3">C3</span></td><td>PG</td><td>1</td></tr>
+          <tr><td>2</td><td>Syukur Nikmat</td><td>Menentukan perilaku syukur atas kesehatan</td><td><span class="badge-level c3">C3</span></td><td>PG</td><td>2</td></tr>
+          <tr><td>3</td><td>QS Ibrahim: 7</td><td>Menentukan pelajaran dari janji Allah bagi orang bersyukur</td><td><span class="badge-level c2">C2</span></td><td>PG</td><td>3</td></tr>
+          <tr><td>4</td><td>Kufur Nikmat</td><td>Mengidentifikasi mengeluh makanan sebagai kufur nikmat</td><td><span class="badge-level c2">C2</span></td><td>PG</td><td>4</td></tr>
+          <tr><td>5</td><td>Syukur Nikmat</td><td>Menentukan sikap saat teman mendapat barang baru</td><td><span class="badge-level c3">C3</span></td><td>PG</td><td>5</td></tr>
+          <tr><td>6</td><td>Syukur Nikmat</td><td>Menjelaskan alasan wajib bersyukur atas nikmat</td><td><span class="badge-level c2">C2</span></td><td>PG</td><td>6</td></tr>
+          <tr><td>7</td><td>Syukur perbuatan</td><td>Menentukan contoh syukur melalui perbuatan baik</td><td><span class="badge-level c3">C3</span></td><td>PG</td><td>7</td></tr>
+          <tr><td>8</td><td>Al-Halim</td><td>Mengidentifikasi Asmaul Husna saat tidak membalas ejekan</td><td><span class="badge-level c2">C2</span></td><td>PG</td><td>8</td></tr>
+          <tr><td>9</td><td>Al-Halim</td><td>Menentukan Asmaul Husna Allah tidak tergesa menghukum</td><td><span class="badge-level c2">C2</span></td><td>PG</td><td>9</td></tr>
+          <tr><td>10</td><td>Al-Wahhab</td><td>Menentukan Asmaul Husna Maha Pemberi Karunia</td><td><span class="badge-level c2">C2</span></td><td>PG</td><td>10</td></tr>
+          <tr><td>11</td><td>Ar-Razzaq & Al-Wahhab</td><td>Membedakan makna Ar-Razzaq dan Al-Wahhab</td><td><span class="badge-level c2">C2</span></td><td>PG</td><td>11</td></tr>
+          <tr><td>12</td><td>Al-Halim</td><td>Menentukan arti Al-Halim</td><td><span class="badge-level c1">C1</span></td><td>PG</td><td>12</td></tr>
+          <tr><td>13</td><td>Syukur Nikmat</td><td>Menentukan alasan nikmat Allah tidak dapat dihitung</td><td><span class="badge-level c1">C1</span></td><td>PG</td><td>13</td></tr>
+          <tr><td>14</td><td>Syukur Nikmat</td><td>Menentukan keadaan hamba yang tidak disiksa</td><td><span class="badge-level c2">C2</span></td><td>PG</td><td>14</td></tr>
+          <tr><td>15</td><td>Syukur rezeki</td><td>Menentukan bentuk syukur rezeki melalui berbagi</td><td><span class="badge-level c3">C3</span></td><td>PG</td><td>15</td></tr>
+          <tr><td>16</td><td>Syukur lisan</td><td>Melengkapi ucapan syukur setelah menerima nikmat</td><td><span class="badge-level c1">C1</span></td><td>Isian</td><td>16</td></tr>
+          <tr><td>17</td><td>Kufur Nikmat</td><td>Menyebutkan istilah sikap selalu mengeluh</td><td><span class="badge-level c1">C1</span></td><td>Isian</td><td>17</td></tr>
+          <tr><td>18</td><td>Nikmat Allah</td><td>Melengkapi pernyataan tentang nikmat kesehatan, makanan, keluarga</td><td><span class="badge-level c1">C1</span></td><td>Isian</td><td>18</td></tr>
+          <tr><td>19</td><td>QS Ibrahim: 7</td><td>Menyebutkan janji Allah berupa penambahan nikmat</td><td><span class="badge-level c1">C1</span></td><td>Isian</td><td>19</td></tr>
+          <tr><td>20</td><td>Syukur kesehatan</td><td>Menyebutkan bentuk syukur menjaga kebersihan tubuh</td><td><span class="badge-level c3">C3</span></td><td>Isian</td><td>20</td></tr>
+          <tr><td>21</td><td>Asmaul Husna</td><td>Menyebutkan istilah nama-nama Allah yang indah</td><td><span class="badge-level c1">C1</span></td><td>Isian</td><td>21</td></tr>
+          <tr><td>22</td><td>Asmaul Husna</td><td>Menyebutkan jumlah Asmaul Husna</td><td><span class="badge-level c1">C1</span></td><td>Isian</td><td>22</td></tr>
+          <tr><td>23</td><td>Iman kepada Allah</td><td>Melengkapi pernyataan keyakinan sifat Allah dalam Asmaul Husna</td><td><span class="badge-level c2">C2</span></td><td>Isian</td><td>23</td></tr>
+          <tr><td>24</td><td>Syukur jasmani</td><td>Menyebutkan sifat perbuatan menggunakan anggota tubuh</td><td><span class="badge-level c3">C3</span></td><td>Isian</td><td>24</td></tr>
+          <tr><td>25</td><td>Syukur rohani</td><td>Menyebutkan kegiatan ibadah syukur nikmat rohani</td><td><span class="badge-level c3">C3</span></td><td>Isian</td><td>25</td></tr>
+          <tr><td>26</td><td>Syukur perbuatan</td><td>Menjelaskan cara mewujudkan syukur melalui ketaatan ibadah</td><td><span class="badge-level c4">C4</span></td><td>Uraian</td><td>26</td></tr>
+          <tr><td>27</td><td>Syukur & qanaah</td><td>Menjelaskan sikap saat uang saku lebih sedikit</td><td><span class="badge-level c3">C3</span></td><td>Uraian</td><td>27</td></tr>
+          <tr><td>28</td><td>Al-Wahhab</td><td>Menjelaskan hubungan karunia dengan sifat Al-Wahhab</td><td><span class="badge-level c4">C4</span></td><td>Uraian</td><td>28</td></tr>
+          <tr><td>29</td><td>Al-Halim</td><td>Menjelaskan bukti Allah memiliki sifat Al-Halim</td><td><span class="badge-level c4">C4</span></td><td>Uraian</td><td>29</td></tr>
+          <tr><td>30</td><td>Asmaul Husna</td><td>Menyebutkan lima Asmaul Husna yang diketahui</td><td><span class="badge-level c1">C1</span></td><td>Uraian</td><td>30</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="note"><i class="fas fa-lightbulb"></i><div><strong>Level kognitif:</strong> C1 mengingat · C2 memahami · C3 menerapkan · C4 menganalisis. 💜</div></div>
+  </div>
+
+  <!-- ============ BAHASA ARAB ============ -->
+  <div class="panel" id="panel-arab">
+    <div class="subject-header">
+      <div class="subject-title"><i class="fas fa-language"></i> Bahasa Arab</div>
+      <div class="pill-info"><span>📝 30 butir</span><span>✏️ PG 15 · Isian 10 · Uraian 5</span></div>
+    </div>
+    <div class="table-wrapper">
+      <table>
+        <thead><tr><th>No</th><th>Materi</th><th>Indikator</th><th>Level</th><th>Bentuk</th><th>No. Soal</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>Kosakata belajar</td><td>Menentukan arti نَتَعَلَّمُ</td><td><span class="badge-level c2">C2</span></td><td>PG</td><td>1</td></tr>
+          <tr><td>2</td><td>Nama hewan</td><td>Menentukan kosakata "singa"</td><td><span class="badge-level c1">C1</span></td><td>PG</td><td>2</td></tr>
+          <tr><td>3</td><td>Mata pelajaran</td><td>Makna الرِّيَاضَةُ الْبَدَنِيَّةُ</td><td><span class="badge-level c2">C2</span></td><td>PG</td><td>3</td></tr>
+          <tr><td>4</td><td>Nama hewan</td><td>Arti سَمَكٌ</td><td><span class="badge-level c2">C2</span></td><td>PG</td><td>4</td></tr>
+          <tr><td>5</td><td>Nama hewan</td><td>Kosakata "ayam betina"</td><td><span class="badge-level c2">C2</span></td><td>PG</td><td>5</td></tr>
+          <tr><td>6</td><td>Kata kerja</td><td>Arti يَتَمَشَّى</td><td><span class="badge-level c2">C2</span></td><td>PG</td><td>6</td></tr>
+          <tr><td>7</td><td>Tempat</td><td>Ungkapan "kebun binatang"</td><td><span class="badge-level c2">C2</span></td><td>PG</td><td>7</td></tr>
+          <tr><td>8</td><td>Ungkapan pendidikan</td><td>Arti طَلَبُ الْعِلْمِ</td><td><span class="badge-level c2">C2</span></td><td>PG</td><td>8</td></tr>
+          <tr><td>9</td><td>Nama hewan</td><td>Arti فِيْلٌ</td><td><span class="badge-level c2">C2</span></td><td>PG</td><td>9</td></tr>
+          <tr><td>10</td><td>Mata pelajaran</td><td>Makna الرِّيَاضِيَّةُ</td><td><span class="badge-level c2">C2</span></td><td>PG</td><td>10</td></tr>
+          <tr><td>11</td><td>Ungkapan azan</td><td>Makna حَيَّ عَلَى الصَّلَاةِ</td><td><span class="badge-level c2">C2</span></td><td>PG</td><td>11</td></tr>
+          <tr><td>12</td><td>Nama hewan</td><td>Kosakata "nyamuk"</td><td><span class="badge-level c1">C1</span></td><td>PG</td><td>12</td></tr>
+          <tr><td>13</td><td>Ungkapan persetujuan</td><td>Arti أُوَافِقُ</td><td><span class="badge-level c2">C2</span></td><td>PG</td><td>13</td></tr>
+          <tr><td>14</td><td>Nama hewan</td><td>Kosakata "kucing"</td><td><span class="badge-level c1">C1</span></td><td>PG</td><td>14</td></tr>
+          <tr><td>15</td><td>Pembelajaran Al-Qur'an</td><td>Arti الْقِرَاءَةُ وَكِتَابَةُ الْقُرْآنِ</td><td><span class="badge-level c2">C2</span></td><td>PG</td><td>15</td></tr>
+          <tr><td>16</td><td>Aktivitas belajar</td><td>Menulis kosakata "bersungguh-sungguh"</td><td><span class="badge-level c3">C3</span></td><td>Isian</td><td>16</td></tr>
+          <tr><td>17</td><td>Nama hewan</td><td>Arti جَمَلٌ</td><td><span class="badge-level c2">C2</span></td><td>Isian</td><td>17</td></tr>
+          <tr><td>18</td><td>Mata pelajaran</td><td>Bahasa Arab "Sejarah Kebudayaan Islam"</td><td><span class="badge-level c3">C3</span></td><td>Isian</td><td>18</td></tr>
+          <tr><td>19</td><td>Nama hewan</td><td>Arti أَرْنَبٌ</td><td><span class="badge-level c2">C2</span></td><td>Isian</td><td>19</td></tr>
+          <tr><td>20</td><td>Mata pelajaran</td><td>Bahasa Arab "Matematika"</td><td><span class="badge-level c3">C3</span></td><td>Isian</td><td>20</td></tr>
+          <tr><td>21</td><td>Nama hewan</td><td>Arti تِمْسَاحٌ</td><td><span class="badge-level c2">C2</span></td><td>Isian</td><td>21</td></tr>
+          <tr><td>22</td><td>Nama bahasa</td><td>Ungkapan "Bahasa Arab"</td><td><span class="badge-level c3">C3</span></td><td>Isian</td><td>22</td></tr>
+          <tr><td>23</td><td>Ungkapan azan</td><td>Makna حَيَّ عَلَى الصَّلَاةِ</td><td><span class="badge-level c2">C2</span></td><td>Isian</td><td>23</td></tr>
+          <tr><td>24</td><td>Nama hewan</td><td>Bahasa Arab "ikan"</td><td><span class="badge-level c3">C3</span></td><td>Isian</td><td>24</td></tr>
+          <tr><td>25</td><td>Kata kerja</td><td>Arti يَتَمَشَّى</td><td><span class="badge-level c2">C2</span></td><td>Isian</td><td>25</td></tr>
+          <tr><td>26</td><td>Mata pelajaran</td><td>Menyebutkan 3 nama mata pelajaran</td><td><span class="badge-level c3">C3</span></td><td>Uraian</td><td>26</td></tr>
+          <tr><td>27</td><td>Nama hewan</td><td>Menyebutkan 3 nama hewan</td><td><span class="badge-level c3">C3</span></td><td>Uraian</td><td>27</td></tr>
+          <tr><td>28</td><td>Kalimat nominal</td><td>Menerjemahkan "Ini gajah"</td><td><span class="badge-level c3">C3</span></td><td>Uraian</td><td>28</td></tr>
+          <tr><td>29</td><td>Kosakata & sambung</td><td>Menerjemahkan "ayam jantan dan ayam betina"</td><td><span class="badge-level c3">C3</span></td><td>Uraian</td><td>29</td></tr>
+          <tr><td>30</td><td>Pemahaman kalimat</td><td>Menerjemahkan هَذَا سَمَكٌ وَذَلِكَ نَمْلٌ</td><td><span class="badge-level c3">C3</span></td><td>Uraian</td><td>30</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="note"><i class="fas fa-lightbulb"></i><div><strong>Level kognitif:</strong> C1 mengingat · C2 memahami · C3 menerapkan · C4 menganalisis. 💙</div></div>
+  </div>
+
+  <!-- ============ FIKIH ============ -->
+  <div class="panel" id="panel-fikih">
+    <div class="subject-header">
+      <div class="subject-title"><i class="fas fa-mosque"></i> Fikih</div>
+      <div class="pill-info"><span>📝 30 butir</span><span>✏️ PG 15 · Isian 10 · Uraian 5</span></div>
+    </div>
+    <div class="table-wrapper">
+      <table>
+        <thead><tr><th>No</th><th>Materi</th><th>Indikator</th><th>Level</th><th>Bentuk</th><th>No. Soal</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>Salat Rawatib</td><td>Mengidentifikasi pengertian salat Rawatib</td><td><span class="badge-level c1">C1</span></td><td>PG</td><td>1</td></tr>
+          <tr><td>2</td><td>Qabliyah</td><td>Menentukan istilah salat sebelum fardu</td><td><span class="badge-level c1">C1</span></td><td>PG</td><td>2</td></tr>
+          <tr><td>3</td><td>Ba'diyah</td><td>Menentukan istilah salat setelah fardu</td><td><span class="badge-level c1">C1</span></td><td>PG</td><td>3</td></tr>
+          <tr><td>4</td><td>Rawatib Mu'akkadah</td><td>Mengidentifikasi pengertian Rawatib sangat dianjurkan</td><td><span class="badge-level c1">C1</span></td><td>PG</td><td>4</td></tr>
+          <tr><td>5</td><td>Ketentuan Rawatib</td><td>Menentukan salat fardu tanpa ba'diyah</td><td><span class="badge-level c2">C2</span></td><td>PG</td><td>5</td></tr>
+          <tr><td>6</td><td>Hikmah Rawatib</td><td>Menjelaskan fungsi Rawatib terhadap salat fardu</td><td><span class="badge-level c2">C2</span></td><td>PG</td><td>6</td></tr>
+          <tr><td>7</td><td>Jumlah Rakaat</td><td>Menentukan jumlah rakaat Rawatib mu'akkadah</td><td><span class="badge-level c1">C1</span></td><td>PG</td><td>7</td></tr>
+          <tr><td>8</td><td>Keutamaan Rawatib</td><td>Mengidentifikasi Rawatib keutamaan sangat besar</td><td><span class="badge-level c2">C2</span></td><td>PG</td><td>8</td></tr>
+          <tr><td>9</td><td>Salat Jamak</td><td>Mengidentifikasi konsep menggabungkan salat</td><td><span class="badge-level c1">C1</span></td><td>PG</td><td>9</td></tr>
+          <tr><td>10</td><td>Salat Qasar</td><td>Mengidentifikasi konsep meringkas rakaat</td><td><span class="badge-level c1">C1</span></td><td>PG</td><td>10</td></tr>
+          <tr><td>11</td><td>Ketentuan Jamak Qasar</td><td>Menentukan kondisi keringanan Jamak Qasar</td><td><span class="badge-level c2">C2</span></td><td>PG</td><td>11</td></tr>
+          <tr><td>12</td><td>Jamak Ta'khir</td><td>Mengidentifikasi jenis Jamak berdasarkan waktu</td><td><span class="badge-level c2">C2</span></td><td>PG</td><td>12</td></tr>
+          <tr><td>13</td><td>Jamak Taqdim</td><td>Menentukan konsep Jamak Taqdim</td><td><span class="badge-level c2">C2</span></td><td>PG</td><td>13</td></tr>
+          <tr><td>14</td><td>Ketentuan Qasar</td><td>Menentukan salat fardu tidak dapat diqasar</td><td><span class="badge-level c2">C2</span></td><td>PG</td><td>14</td></tr>
+          <tr><td>15</td><td>Kombinasi Jamak Qasar</td><td>Menentukan pasangan salat dapat dijamak sekaligus diqasar</td><td><span class="badge-level c3">C3</span></td><td>PG</td><td>15</td></tr>
+          <tr><td>16</td><td>Istilah Rawatib</td><td>Mengidentifikasi makna ratibah</td><td><span class="badge-level c1">C1</span></td><td>Isian</td><td>16</td></tr>
+          <tr><td>17</td><td>Rawatib Subuh</td><td>Menyebutkan istilah salat sunah 2 rakaat sebelum Subuh</td><td><span class="badge-level c1">C1</span></td><td>Isian</td><td>17</td></tr>
+          <tr><td>18</td><td>Rawatib Asar</td><td>Menentukan jumlah rakaat sunah sebelum Asar</td><td><span class="badge-level c1">C1</span></td><td>Isian</td><td>18</td></tr>
+          <tr><td>19</td><td>Tempat Rawatib</td><td>Menyebutkan tempat dianjurkan salat sunah Rawatib</td><td><span class="badge-level c1">C1</span></td><td>Isian</td><td>19</td></tr>
+          <tr><td>20</td><td>Hikmah Rawatib</td><td>Menyebutkan salat yang disempurnakan Rawatib</td><td><span class="badge-level c2">C2</span></td><td>Isian</td><td>20</td></tr>
+          <tr><td>21</td><td>Pengertian Jamak</td><td>Menyebutkan istilah menggabungkan dua salat</td><td><span class="badge-level c1">C1</span></td><td>Isian</td><td>21</td></tr>
+          <tr><td>22</td><td>Pengertian Qasar</td><td>Menyebutkan istilah meringkas rakaat salat</td><td><span class="badge-level c1">C1</span></td><td>Isian</td><td>22</td></tr>
+          <tr><td>23</td><td>Sebab Jamak Qasar</td><td>Menyebutkan kondisi diperbolehkannya Jamak Qasar</td><td><span class="badge-level c2">C2</span></td><td>Isian</td><td>23</td></tr>
+          <tr><td>24</td><td>Salat tidak diqasar</td><td>Melengkapi pasangan salat tidak dapat diqasar</td><td><span class="badge-level c2">C2</span></td><td>Isian</td><td>24</td></tr>
+          <tr><td>25</td><td>Jamak Ta'khir</td><td>Menentukan istilah Jamak berdasarkan waktu salat kedua</td><td><span class="badge-level c2">C2</span></td><td>Isian</td><td>25</td></tr>
+          <tr><td>26</td><td>Rawatib Mu'akkadah</td><td>Menyebutkan 3 contoh Rawatib mu'akkadah</td><td><span class="badge-level c2">C2</span></td><td>Uraian</td><td>26</td></tr>
+          <tr><td>27</td><td>Niat Rawatib</td><td>Menulis lafaz niat Rawatib 2 rakaat sebelum Subuh</td><td><span class="badge-level c3">C3</span></td><td>Uraian</td><td>27</td></tr>
+          <tr><td>28</td><td>Hikmah Rawatib di rumah</td><td>Menjelaskan tujuan melaksanakan salat sunah di rumah</td><td><span class="badge-level c3">C3</span></td><td>Uraian</td><td>28</td></tr>
+          <tr><td>29</td><td>Syarat Qasar</td><td>Menyebutkan 2 syarat diperbolehkannya Qasar</td><td><span class="badge-level c2">C2</span></td><td>Uraian</td><td>29</td></tr>
+          <tr><td>30</td><td>Tata Cara Jamak Taqdim</td><td>Menjelaskan urutan Jamak Taqdim Zuhur dan Asar</td><td><span class="badge-level c3">C3</span></td><td>Uraian</td><td>30</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="note"><i class="fas fa-lightbulb"></i><div><strong>Level kognitif:</strong> C1 mengingat · C2 memahami · C3 menerapkan · C4 menganalisis. 💚</div></div>
+  </div>
+
+  <!-- ============ AL-QUR'AN HADITS ============ -->
+  <div class="panel" id="panel-quran">
+    <div class="subject-header">
+      <div class="subject-title"><i class="fas fa-quran"></i> Al-Qur'an Hadits</div>
+      <div class="pill-info"><span>📝 30 butir</span><span>✏️ PG 15 · Isian 10 · Uraian 5</span></div>
+    </div>
+    <div class="table-wrapper">
+      <table>
+        <thead><tr><th>No</th><th>Materi</th><th>Indikator</th><th>Level</th><th>Bentuk</th><th>No. Soal</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>Al-Fatihah</td><td>Menentukan jumlah ayat</td><td><span class="badge-level c1">C1</span></td><td>PG</td><td>1</td></tr>
+          <tr><td>2</td><td>An-Nas</td><td>Menentukan arti nama surat</td><td><span class="badge-level c1">C1</span></td><td>PG</td><td>2</td></tr>
+          <tr><td>3</td><td>Al-Ikhlas</td><td>Mengidentifikasi surat keesaan Allah</td><td><span class="badge-level c2">C2</span></td><td>PG</td><td>3</td></tr>
+          <tr><td>4</td><td>Al-Ikhlas</td><td>Menentukan surat dari potongan lafaz</td><td><span class="badge-level c1">C1</span></td><td>PG</td><td>4</td></tr>
+          <tr><td>5</td><td>Qalqalah</td><td>Mengidentifikasi huruf qalqalah</td><td><span class="badge-level c1">C1</span></td><td>PG</td><td>5</td></tr>
+          <tr><td>6</td><td>Qalqalah</td><td>Menentukan cara membaca huruf qalqalah</td><td><span class="badge-level c2">C2</span></td><td>PG</td><td>6</td></tr>
+          <tr><td>7</td><td>Al-Mu'awwidzatain</td><td>Menyebutkan sebutan Al-Falaq dan An-Nas</td><td><span class="badge-level c1">C1</span></td><td>PG</td><td>7</td></tr>
+          <tr><td>8</td><td>Qalqalah Kubra</td><td>Mengidentifikasi qalqalah memantul di akhir ayat</td><td><span class="badge-level c2">C2</span></td><td>PG</td><td>8</td></tr>
+          <tr><td>9</td><td>Al-Falaq</td><td>Menentukan makna ayat Al-Falaq</td><td><span class="badge-level c2">C2</span></td><td>PG</td><td>9</td></tr>
+          <tr><td>10</td><td>Qalqalah Kubra</td><td>Menentukan jenis qalqalah akhir Al-Ikhlas</td><td><span class="badge-level c2">C2</span></td><td>PG</td><td>10</td></tr>
+          <tr><td>11</td><td>Al-Fatihah</td><td>Mengidentifikasi surat pembuka Al-Qur'an</td><td><span class="badge-level c1">C1</span></td><td>PG</td><td>11</td></tr>
+          <tr><td>12</td><td>Qalqalah Sughra</td><td>Menentukan jenis qalqalah huruf sukun di tengah kata</td><td><span class="badge-level c2">C2</span></td><td>PG</td><td>12</td></tr>
+          <tr><td>13</td><td>An-Nas</td><td>Mengidentifikasi kejahatan dalam An-Nas</td><td><span class="badge-level c2">C2</span></td><td>PG</td><td>13</td></tr>
+          <tr><td>14</td><td>Al-Fatihah</td><td>Menentukan nama lain Al-Fatihah</td><td><span class="badge-level c1">C1</span></td><td>PG</td><td>14</td></tr>
+          <tr><td>15</td><td>Qalqalah</td><td>Menentukan hukum bacaan memantul</td><td><span class="badge-level c2">C2</span></td><td>PG</td><td>15</td></tr>
+          <tr><td>16</td><td>Al-Fatihah</td><td>Melengkapi nama As-Sab'ul Matsani</td><td><span class="badge-level c1">C1</span></td><td>Isian</td><td>16</td></tr>
+          <tr><td>17</td><td>Al-Fatihah</td><td>Menyebutkan urutan surat</td><td><span class="badge-level c1">C1</span></td><td>Isian</td><td>17</td></tr>
+          <tr><td>18</td><td>An-Nas</td><td>Melengkapi golongan bisikan dalam An-Nas</td><td><span class="badge-level c2">C2</span></td><td>Isian</td><td>18</td></tr>
+          <tr><td>19</td><td>An-Nas</td><td>Menyebutkan urutan An-Nas</td><td><span class="badge-level c1">C1</span></td><td>Isian</td><td>19</td></tr>
+          <tr><td>20</td><td>Al-Falaq</td><td>Melengkapi keadaan malam dalam Al-Falaq</td><td><span class="badge-level c2">C2</span></td><td>Isian</td><td>20</td></tr>
+          <tr><td>21</td><td>Al-Mu'awwidzatain</td><td>Menjelaskan arti Al-Mu'awwidzatain</td><td><span class="badge-level c2">C2</span></td><td>Isian</td><td>21</td></tr>
+          <tr><td>22</td><td>Al-Ikhlas</td><td>Menuliskan ayat terakhir Al-Ikhlas</td><td><span class="badge-level c1">C1</span></td><td>Isian</td><td>22</td></tr>
+          <tr><td>23</td><td>Qalqalah</td><td>Menyebutkan huruf qalqalah</td><td><span class="badge-level c1">C1</span></td><td>Isian</td><td>23</td></tr>
+          <tr><td>24</td><td>Qalqalah Kubra</td><td>Menyebutkan jenis qalqalah memantul di akhir</td><td><span class="badge-level c1">C1</span></td><td>Isian</td><td>24</td></tr>
+          <tr><td>25</td><td>Qalqalah Sughra</td><td>Menyebutkan jenis qalqalah di tengah kata</td><td><span class="badge-level c2">C2</span></td><td>Isian</td><td>25</td></tr>
+          <tr><td>26</td><td>Al-Falaq</td><td>Menuliskan lafaz Al-Falaq ayat 2</td><td><span class="badge-level c1">C1</span></td><td>Uraian</td><td>26</td></tr>
+          <tr><td>27</td><td>Al-Fatihah</td><td>Menuliskan lanjutan setelah ayat 6</td><td><span class="badge-level c1">C1</span></td><td>Uraian</td><td>27</td></tr>
+          <tr><td>28</td><td>Qalqalah</td><td>Memberikan contoh ayat mengandung qalqalah</td><td><span class="badge-level c3">C3</span></td><td>Uraian</td><td>28</td></tr>
+          <tr><td>29</td><td>Al-Fatihah</td><td>Menulis terjemahan Al-Fatihah ayat 2</td><td><span class="badge-level c2">C2</span></td><td>Uraian</td><td>29</td></tr>
+          <tr><td>30</td><td>Al-Ikhlas</td><td>Menulis ayat terakhir Al-Ikhlas</td><td><span class="badge-level c1">C1</span></td><td>Uraian</td><td>30</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="note"><i class="fas fa-lightbulb"></i><div><strong>Level kognitif:</strong> C1 mengingat · C2 memahami · C3 menerapkan · C4 menganalisis. 🧡</div></div>
+  </div>
+
+  <!-- ============ SKI ============ -->
+  <div class="panel" id="panel-ski">
+    <div class="subject-header">
+      <div class="subject-title"><i class="fas fa-landmark"></i> Sejarah Kebudayaan Islam (SKI)</div>
+      <div class="pill-info"><span>📝 30 butir</span><span>✏️ PG 15 · Isian 10 · Uraian 5</span></div>
+    </div>
+    <div class="table-wrapper">
+      <table>
+        <thead><tr><th>No</th><th>Materi</th><th>Indikator</th><th>Level</th><th>Bentuk</th><th>No. Soal</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>Masyarakat Arab Jahiliyah</td><td>Menentukan akibat kondisi sosial terbagi kelompok</td><td><span class="badge-level c2">C2</span></td><td>PG</td><td>1</td></tr>
+          <tr><td>2</td><td>Kebiasaan Jahiliyah</td><td>Menentukan makna minuman keras sebagai kemewahan</td><td><span class="badge-level c2">C2</span></td><td>PG</td><td>2</td></tr>
+          <tr><td>3</td><td>Kepercayaan Arab</td><td>Mengidentifikasi kepercayaan terhadap benda</td><td><span class="badge-level c1">C1</span></td><td>PG</td><td>3</td></tr>
+          <tr><td>4</td><td>Kepercayaan Arab</td><td>Menentukan nama penganut penyembah api</td><td><span class="badge-level c1">C1</span></td><td>PG</td><td>4</td></tr>
+          <tr><td>5</td><td>Sifat positif Jahiliyah</td><td>Menentukan sifat positif masyarakat Arab Jahiliyah</td><td><span class="badge-level c2">C2</span></td><td>PG</td><td>5</td></tr>
+          <tr><td>6</td><td>Berhala</td><td>Menentukan nama berhala masa Jahiliyah</td><td><span class="badge-level c1">C1</span></td><td>PG</td><td>6</td></tr>
+          <tr><td>7</td><td>Kehidupan sosial</td><td>Menentukan nama lembaga dewan nasihat</td><td><span class="badge-level c1">C1</span></td><td>PG</td><td>7</td></tr>
+          <tr><td>8</td><td>Kelahiran Nabi</td><td>Menentukan arti nama Muhammad</td><td><span class="badge-level c1">C1</span></td><td>PG</td><td>8</td></tr>
+          <tr><td>9</td><td>Kelahiran Nabi</td><td>Menentukan tanggal kelahiran Nabi</td><td><span class="badge-level c1">C1</span></td><td>PG</td><td>9</td></tr>
+          <tr><td>10</td><td>Kehamilan Siti Aminah</td><td>Menentukan keadaan dialami Siti Aminah</td><td><span class="badge-level c2">C2</span></td><td>PG</td><td>10</td></tr>
+          <tr><td>11</td><td>Peristiwa luar biasa</td><td>Menentukan benda yang hancur di Ka'bah</td><td><span class="badge-level c1">C1</span></td><td>PG</td><td>11</td></tr>
+          <tr><td>12</td><td>Tahun kelahiran Nabi</td><td>Mengidentifikasi peristiwa tahun kelahiran Nabi</td><td><span class="badge-level c2">C2</span></td><td>PG</td><td>12</td></tr>
+          <tr><td>13</td><td>Nabi sebagai rahmat</td><td>Menentukan bagi siapa rahmat diberikan</td><td><span class="badge-level c2">C2</span></td><td>PG</td><td>13</td></tr>
+          <tr><td>14</td><td>Misi Nabi</td><td>Menentukan hal yang hendak dihapuskan</td><td><span class="badge-level c2">C2</span></td><td>PG</td><td>14</td></tr>
+          <tr><td>15</td><td>Tahun Gajah</td><td>Menentukan istilah tahun pasukan bergajah</td><td><span class="badge-level c1">C1</span></td><td>PG</td><td>15</td></tr>
+          <tr><td>16</td><td>Masa Jahiliyah</td><td>Menyebutkan istilah masa sebelum Islam</td><td><span class="badge-level c1">C1</span></td><td>Isian</td><td>16</td></tr>
+          <tr><td>17</td><td>Sifat positif</td><td>Menyebutkan salah satu sifat positif masyarakat Arab</td><td><span class="badge-level c1">C1</span></td><td>Isian</td><td>17</td></tr>
+          <tr><td>18</td><td>Perlakuan bayi perempuan</td><td>Menyebutkan tindakan masyarakat Jahiliyah</td><td><span class="badge-level c1">C1</span></td><td>Isian</td><td>18</td></tr>
+          <tr><td>19</td><td>Berhala di Ka'bah</td><td>Menyebutkan jumlah berhala</td><td><span class="badge-level c1">C1</span></td><td>Isian</td><td>19</td></tr>
+          <tr><td>20</td><td>Kepercayaan Arab</td><td>Menyebutkan istilah percaya lebih dari satu Tuhan</td><td><span class="badge-level c1">C1</span></td><td>Isian</td><td>20</td></tr>
+          <tr><td>21</td><td>Jazirah Arab</td><td>Menyebutkan wilayah penting Jazirah Arab</td><td><span class="badge-level c1">C1</span></td><td>Isian</td><td>21</td></tr>
+          <tr><td>22</td><td>Mata pencaharian</td><td>Menyebutkan mata pencaharian masyarakat Arab</td><td><span class="badge-level c1">C1</span></td><td>Isian</td><td>22</td></tr>
+          <tr><td>23</td><td>Silsilah Nabi</td><td>Melengkapi sifat keturunan Nabi</td><td><span class="badge-level c2">C2</span></td><td>Isian</td><td>23</td></tr>
+          <tr><td>24</td><td>Pasukan bergajah</td><td>Menyebutkan nama pemimpin pasukan</td><td><span class="badge-level c1">C1</span></td><td>Isian</td><td>24</td></tr>
+          <tr><td>25</td><td>Peristiwa kelahiran</td><td>Menyebutkan keadaan tanah tempat kelahiran Nabi</td><td><span class="badge-level c1">C1</span></td><td>Isian</td><td>25</td></tr>
+          <tr><td>26</td><td>Kebiasaan Jahiliyah</td><td>Menyebutkan 3 kebiasaan masyarakat Arab Jahiliyah</td><td><span class="badge-level c2">C2</span></td><td>Uraian</td><td>26</td></tr>
+          <tr><td>27</td><td>Sifat positif</td><td>Menyebutkan 3 sifat positif masyarakat Arab Jahiliyah</td><td><span class="badge-level c2">C2</span></td><td>Uraian</td><td>27</td></tr>
+          <tr><td>28</td><td>Silsilah Nabi</td><td>Menuliskan silsilah Nabi sampai Kilab</td><td><span class="badge-level c3">C3</span></td><td>Uraian</td><td>28</td></tr>
+          <tr><td>29</td><td>Peristiwa luar biasa</td><td>Menyebutkan peristiwa luar biasa sekitar kelahiran Nabi</td><td><span class="badge-level c2">C2</span></td><td>Uraian</td><td>29</td></tr>
+          <tr><td>30</td><td>Hikmah kelahiran Nabi</td><td>Menyebutkan 2 hikmah sejarah kelahiran Nabi</td><td><span class="badge-level c3">C3</span></td><td>Uraian</td><td>30</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="note"><i class="fas fa-lightbulb"></i><div><strong>Level kognitif:</strong> C1 mengingat · C2 memahami · C3 menerapkan · C4 menganalisis. 💛</div></div>
+  </div>
+
+  <!-- ============ BAHASA INGGRIS ============ -->
+  <div class="panel" id="panel-inggris">
+    <div class="subject-header">
+      <div class="subject-title"><i class="fas fa-flag-usa"></i> Bahasa Inggris</div>
+      <div class="pill-info"><span>📝 30 butir</span><span>✏️ PG 15 · Isian 10 · Uraian 5</span></div>
+    </div>
+    <div class="table-wrapper">
+      <table>
+        <thead><tr><th>No</th><th>Materi/Topik</th><th>Indikator</th><th>Level</th><th>Bentuk</th><th>No. Soal</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>Friendly Greetings</td><td>Melengkapi ucapan greeting saat berkenalan</td><td><span class="badge-level c2">C2</span></td><td>PG</td><td>1</td></tr>
+          <tr><td>2</td><td>Asking Name</td><td>Mengidentifikasi kalimat santun menanyakan teman baru</td><td><span class="badge-level c1">C1</span></td><td>PG</td><td>2</td></tr>
+          <tr><td>3</td><td>Asking Name</td><td>Mengidentifikasi pertanyaan menanyakan teman baru</td><td><span class="badge-level c1">C1</span></td><td>PG</td><td>3</td></tr>
+          <tr><td>4</td><td>Meaning of Greetings</td><td>Menentukan arti ungkapan</td><td><span class="badge-level c2">C2</span></td><td>PG</td><td>4</td></tr>
+          <tr><td>5</td><td>Expressing Condition</td><td>Melengkapi dialog sederhana</td><td><span class="badge-level c2">C2</span></td><td>PG</td><td>5</td></tr>
+          <tr><td>6</td><td>Stating Age</td><td>Menentukan terjemahan kalimat</td><td><span class="badge-level c2">C2</span></td><td>PG</td><td>6</td></tr>
+          <tr><td>7</td><td>Greetings (Good afternoon)</td><td>Melengkapi dialog sapaan waktu</td><td><span class="badge-level c2">C2</span></td><td>PG</td><td>7</td></tr>
+          <tr><td>8</td><td>Hobbies/Activities</td><td>Menentukan kata hobi berdasarkan deskripsi</td><td><span class="badge-level c3">C3</span></td><td>PG</td><td>8</td></tr>
+          <tr><td>9</td><td>Hobbies/Activities</td><td>Menentukan jenis hobi berdasarkan aktivitas</td><td><span class="badge-level c3">C3</span></td><td>PG</td><td>9</td></tr>
+          <tr><td>10</td><td>Hobbies/Activities</td><td>Menentukan kosakata hobi dari ilustrasi</td><td><span class="badge-level c2">C2</span></td><td>PG</td><td>10</td></tr>
+          <tr><td>11</td><td>Hobbies/Activities</td><td>Menentukan kata hobi sesuai gambar/deskripsi</td><td><span class="badge-level c2">C2</span></td><td>PG</td><td>11</td></tr>
+          <tr><td>12</td><td>Vocabulary (Hobbies)</td><td>Menentukan istilah Bahasa Inggris</td><td><span class="badge-level c1">C1</span></td><td>PG</td><td>12</td></tr>
+          <tr><td>13</td><td>Vocabulary (Hobbies)</td><td>Menentukan arti Bahasa Indonesia</td><td><span class="badge-level c1">C1</span></td><td>PG</td><td>13</td></tr>
+          <tr><td>14</td><td>Equipment for Sports</td><td>Menentukan peralatan olahraga</td><td><span class="badge-level c3">C3</span></td><td>PG</td><td>14</td></tr>
+          <tr><td>15</td><td>Vocabulary (Hobbies)</td><td>Menentukan istilah Bahasa Inggris</td><td><span class="badge-level c1">C1</span></td><td>PG</td><td>15</td></tr>
+          <tr><td>16</td><td>Possessive Pronoun (His)</td><td>Melengkapi kata ganti dalam kalimat</td><td><span class="badge-level c2">C2</span></td><td>Isian</td><td>16</td></tr>
+          <tr><td>17</td><td>Possessive Pronoun (Her)</td><td>Melengkapi kata ganti kepunyaan</td><td><span class="badge-level c2">C2</span></td><td>Isian</td><td>17</td></tr>
+          <tr><td>18</td><td>Friendly Greetings</td><td>Melengkapi ungkapan perkenalan</td><td><span class="badge-level c1">C1</span></td><td>Isian</td><td>18</td></tr>
+          <tr><td>19</td><td>Asking Address</td><td>Melengkapi kata tanya/kata kerja rumpang</td><td><span class="badge-level c2">C2</span></td><td>Isian</td><td>19</td></tr>
+          <tr><td>20</td><td>Asking Condition</td><td>Melengkapi kata tanya</td><td><span class="badge-level c1">C1</span></td><td>Isian</td><td>20</td></tr>
+          <tr><td>21</td><td>Hobbies/Activities</td><td>Melengkapi kata hobi dari gambar/deskripsi</td><td><span class="badge-level c2">C2</span></td><td>Isian</td><td>21</td></tr>
+          <tr><td>22</td><td>Hobbies/Activities</td><td>Melengkapi ungkapan hobi berdasarkan konteks</td><td><span class="badge-level c3">C3</span></td><td>Isian</td><td>22</td></tr>
+          <tr><td>23</td><td>Spelling (Hobbies)</td><td>Melengkapi huruf yang hilang</td><td><span class="badge-level c1">C1</span></td><td>Isian</td><td>23</td></tr>
+          <tr><td>24</td><td>Vocabulary (Sports/Hobbies)</td><td>Menerjemahkan kata dalam kurung</td><td><span class="badge-level c1">C1</span></td><td>Isian</td><td>24</td></tr>
+          <tr><td>25</td><td>Equipment for Sports</td><td>Menentukan nama olahraga/permainan</td><td><span class="badge-level c3">C3</span></td><td>Isian</td><td>25</td></tr>
+          <tr><td>26</td><td>Translation (Ind-Eng)</td><td>Menerjemahkan kalimat tempat tinggal</td><td><span class="badge-level c3">C3</span></td><td>Uraian</td><td>26</td></tr>
+          <tr><td>27</td><td>Translation (Ind-Eng)</td><td>Menerjemahkan kalimat hobi</td><td><span class="badge-level c3">C3</span></td><td>Uraian</td><td>27</td></tr>
+          <tr><td>28</td><td>Word Order</td><td>Menyusun acakan kata menjadi kalimat pernyataan nama</td><td><span class="badge-level c4">C4</span></td><td>Uraian</td><td>28</td></tr>
+          <tr><td>29</td><td>Translation (Eng-Ind)</td><td>Menerjemahkan dua kalimat hobi ke Bahasa Indonesia</td><td><span class="badge-level c3">C3</span></td><td>Uraian</td><td>29</td></tr>
+          <tr><td>30</td><td>Outdoor Activities</td><td>Menyebutkan 3 macam aktivitas luar ruangan</td><td><span class="badge-level c4">C4</span></td><td>Uraian</td><td>30</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="note"><i class="fas fa-lightbulb"></i><div><strong>Level kognitif:</strong> C1 mengingat · C2 memahami · C3 menerapkan · C4 menganalisis. ❤️</div></div>
+  </div>
+
+  <!-- ============ PJOK ============ -->
+  <div class="panel" id="panel-pjok">
+    <div class="subject-header">
+      <div class="subject-title"><i class="fas fa-running"></i> PJOK</div>
+      <div class="pill-info"><span>📝 10 butir indikator</span><span>🏃 Kisi-kisi</span></div>
+    </div>
+    <div class="table-wrapper">
+      <table>
+        <thead><tr><th>No</th><th>Materi / Sub-Materi</th><th>Indikator Soal</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>Gerak berirama - Lokomotor berirama</td><td>Mengidentifikasi pengertian gerak lokomotor; contoh variasi langkah kaki</td></tr>
+          <tr><td>2</td><td>Variasi lokomotor – Pola gerak kaki & meloncat</td><td>Menganalisis variasi gabungan jalan, lari, dan lompat berirama</td></tr>
+          <tr><td>3</td><td>Gerak berirama – Non lokomotor</td><td>Menyebutkan ciri utama gerak non-lokomotor</td></tr>
+          <tr><td>4</td><td>Gerak berirama – Lokomotor & non lokomotor</td><td>Membedakan dampak hilangnya konsentrasi/irama saat senam</td></tr>
+          <tr><td>5</td><td>Variasi Non lokomotor – memutar pinggang/lengan</td><td>Menganalisis kelentukan tubuh dalam gerak memutar</td></tr>
+          <tr><td>6</td><td>Kombinasi gerak – Evaluasi gerak ritmis</td><td>Memecahkan masalah ketidaksesuaian irama dan gerakan kelompok</td></tr>
+          <tr><td>7</td><td>Variasi gerak – Pasangan istilah & gerak</td><td>Menjodohkan jenis gerakan dengan deskripsi yang tepat</td></tr>
+          <tr><td>8</td><td>Konsep gerak – Lokomotor & non lokomotor</td><td>Menilai kebenaran pernyataan seputar gerak berirama</td></tr>
+          <tr><td>9</td><td>Praktik gerak – Konsep dasar berirama</td><td>Melengkapi kalimat rumpang terkait langkah, irama, variasi gerak dasar</td></tr>
+          <tr><td>10</td><td>Penerapan & analisis – Gerak berirama komprehensif</td><td>Menjelaskan, menganalisis, dan membedakan variasi gerak</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="note"><i class="fas fa-info-circle"></i><div>Kisi-kisi PJOK mencakup 10 indikator utama untuk asesmen gerak berirama. 💪</div></div>
+  </div>
+
+  <!-- ============ SBP ============ -->
+  <div class="panel" id="panel-sbp">
+
+    <div class="sbp-logo-hero">
+      <div class="sbp-logo-wrap">
+        <svg class="logo-18-svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#38bdf8"/>
+              <stop offset="50%" stop-color="#0ea5e9"/>
+              <stop offset="100%" stop-color="#06b6d4"/>
+            </linearGradient>
+            <linearGradient id="grad2" x1="0%" y1="100%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#7dd3fc"/>
+              <stop offset="100%" stop-color="#0ea5e9"/>
+            </linearGradient>
+            <linearGradient id="crossGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#f0f9ff"/>
+              <stop offset="100%" stop-color="#bae6fd"/>
+            </linearGradient>
+            <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+              <feGaussianBlur stdDeviation="4" result="blur"/>
+              <feMerge>
+                <feMergeNode in="blur"/>
+                <feMergeNode in="SourceGraphic"/>
+              </feMerge>
+            </filter>
+          </defs>
+          <circle cx="100" cy="100" r="88" fill="none" stroke="url(#grad1)" stroke-width="0.8" opacity="0.35" stroke-dasharray="4 8"/>
+          <circle cx="100" cy="100" r="74" fill="none" stroke="url(#grad2)" stroke-width="1.2" opacity="0.5" stroke-dasharray="2 6"/>
+          <g filter="url(#glow)">
+            <line x1="58" y1="52" x2="58" y2="148" stroke="url(#grad1)" stroke-width="9" stroke-linecap="round"/>
+            <line x1="34" y1="76" x2="58" y2="52" stroke="url(#grad2)" stroke-width="9" stroke-linecap="round"/>
+            <line x1="42" y1="148" x2="74" y2="148" stroke="url(#grad1)" stroke-width="7" stroke-linecap="round"/>
+          </g>
+          <g filter="url(#glow)">
+            <circle cx="124" cy="78" r="26" fill="none" stroke="url(#grad1)" stroke-width="9"/>
+            <circle cx="124" cy="126" r="30" fill="none" stroke="url(#grad2)" stroke-width="9"/>
+          </g>
+          <g filter="url(#glow)">
+            <path d="M 158 28 L 158 46 M 149 37 L 167 37" stroke="url(#crossGrad)" stroke-width="6" stroke-linecap="round"/>
+          </g>
+          <path d="M 30 170 L 48 170 L 56 158 L 66 182 L 76 162 L 84 170 L 110 170 L 118 160 L 128 178 L 136 170 L 170 170"
+                fill="none" stroke="url(#grad1)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.9"/>
+          <circle cx="176" cy="60" r="3" fill="#7dd3fc" opacity="0.8"/>
+          <circle cx="24" cy="120" r="2.5" fill="#0ea5e9" opacity="0.6"/>
+          <circle cx="180" cy="130" r="2" fill="#38bdf8" opacity="0.5"/>
+          <circle cx="30" cy="40" r="2" fill="#bae6fd" opacity="0.6"/>
+        </svg>
+      </div>
+
+      <div class="sbp-text">
+        <h2>🎨 Seni Budaya &amp; Prakarya</h2>
+        <p>Kisi-kisi STS Ganjil Kelas III — dengan semangat kreatif, sehat, dan inovatif. Logo angka 18 bertema medis melambangkan kebugaran dan seni yang menyatu. ✨</p>
+        <div class="sbp-tags">
+          <span class="sbp-tag"><i class="fas fa-palette"></i> Seni Rupa</span>
+          <span class="sbp-tag"><i class="fas fa-music"></i> Seni Musik</span>
+          <span class="sbp-tag"><i class="fas fa-heartbeat"></i> Kesehatan</span>
+          <span class="sbp-tag"><i class="fas fa-hands"></i> Keterampilan</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="subject-header">
+      <div class="subject-title"><i class="fas fa-paint-brush"></i> Kisi-Kisi SBP</div>
+      <div class="pill-info"><span>📝 30 butir</span><span>✏️ PG 15 · Isian 10 · Uraian 5</span></div>
+    </div>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr><th>No</th><th>Materi / Kompetensi</th><th>Indikator Soal</th><th>Level</th><th>Bentuk</th><th>No. Soal</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>Unsur seni rupa</td><td>Mengidentifikasi unsur garis dalam karya seni rupa</td><td><span class="badge-level c1">C1</span></td><td>PG</td><td>1</td></tr>
+          <tr><td>2</td><td>Warna primer</td><td>Menentukan contoh warna primer</td><td><span class="badge-level c1">C1</span></td><td>PG</td><td>2</td></tr>
+          <tr><td>3</td><td>Alat menggambar</td><td>Mengidentifikasi alat untuk mewarnai gambar</td><td><span class="badge-level c1">C1</span></td><td>PG</td><td>3</td></tr>
+          <tr><td>4</td><td>Teknik lipat</td><td>Menentukan bahan utama membuat kipas dari kertas</td><td><span class="badge-level c2">C2</span></td><td>PG</td><td>4</td></tr>
+          <tr><td>5</td><td>Lagu anak</td><td>Mengidentifikasi judul lagu anak bertema kebersihan</td><td><span class="badge-level c2">C2</span></td><td>PG</td><td>5</td></tr>
+          <tr><td>6</td><td>Alat musik ritmis</td><td>Menentukan contoh alat musik ritmis sederhana</td><td><span class="badge-level c2">C2</span></td><td>PG</td><td>6</td></tr>
+          <tr><td>7</td><td>Gerak dan lagu</td><td>Menentukan gerakan sesuai syair lagu</td><td><span class="badge-level c2">C2</span></td><td>PG</td><td>7</td></tr>
+          <tr><td>8</td><td>Kolase</td><td>Mengidentifikasi bahan alam untuk kolase</td><td><span class="badge-level c2">C2</span></td><td>PG</td><td>8</td></tr>
+          <tr><td>9</td><td>Mozaik</td><td>Menentukan langkah membuat mozaik sederhana</td><td><span class="badge-level c3">C3</span></td><td>PG</td><td>9</td></tr>
+          <tr><td>10</td><td>Seni tari</td><td>Mengidentifikasi gerakan tari menirukan tumbuhan</td><td><span class="badge-level c2">C2</span></td><td>PG</td><td>10</td></tr>
+          <tr><td>11</td><td>Karya tiga dimensi</td><td>Mengidentifikasi bahan membuat karya 3D dari tanah liat</td><td><span class="badge-level c2">C2</span></td><td>PG</td><td>11</td></tr>
+          <tr><td>12</td><td>Pola irama</td><td>Menentukan pola irama sederhana pada lagu</td><td><span class="badge-level c2">C2</span></td><td>PG</td><td>12</td></tr>
+          <tr><td>13</td><td>Gambar dekoratif</td><td>Mengidentifikasi motif dekoratif pada karya seni</td><td><span class="badge-level c2">C2</span></td><td>PG</td><td>13</td></tr>
+          <tr><td>14</td><td>Prakarya bahan bekas</td><td>Menentukan karya dari botol bekas</td><td><span class="badge-level c3">C3</span></td><td>PG</td><td>14</td></tr>
+          <tr><td>15</td><td>Kesehatan & seni</td><td>Menghubungkan kebersihan alat menggambar dengan kesehatan</td><td><span class="badge-level c3">C3</span></td><td>PG</td><td>15</td></tr>
+          <tr><td>16</td><td>Unsur seni rupa</td><td>Menyebutkan unsur titik dalam karya seni</td><td><span class="badge-level c1">C1</span></td><td>Isian</td><td>16</td></tr>
+          <tr><td>17</td><td>Warna sekunder</td><td>Menyebutkan hasil campuran warna biru dan kuning</td><td><span class="badge-level c1">C1</span></td><td>Isian</td><td>17</td></tr>
+          <tr><td>18</td><td>Bahan alam</td><td>Menyebutkan bahan alam untuk membuat kerajinan</td><td><span class="badge-level c1">C1</span></td><td>Isian</td><td>18</td></tr>
+          <tr><td>19</td><td>Alat musik</td><td>Melengkapi nama alat musik dari botol kaca</td><td><span class="badge-level c2">C2</span></td><td>Isian</td><td>19</td></tr>
+          <tr><td>20</td><td>Lagu wajib</td><td>Menyebutkan judul lagu wajib nasional</td><td><span class="badge-level c1">C1</span></td><td>Isian</td><td>20</td></tr>
+          <tr><td>21</td><td>Gerak tari</td><td>Menyebutkan gerakan tari menirukan hewan</td><td><span class="badge-level c1">C1</span></td><td>Isian</td><td>21</td></tr>
+          <tr><td>22</td><td>Kolase</td><td>Melengkapi teknik menempel pada kolase</td><td><span class="badge-level c2">C2</span></td><td>Isian</td><td>22</td></tr>
+          <tr><td>23</td><td>Karya 3D</td><td>Menyebutkan bahan utama membuat vas bunga</td><td><span class="badge-level c2">C2</span></td><td>Isian</td><td>23</td></tr>
+          <tr><td>24</td><td>Pola irama</td><td>Melengkapi ketukan pola irama sederhana</td><td><span class="badge-level c2">C2</span></td><td>Isian</td><td>24</td></tr>
+          <tr><td>25</td><td>Kebersihan alat</td><td>Menyebutkan cara membersihkan kuas setelah digunakan</td><td><span class="badge-level c3">C3</span></td><td>Isian</td><td>25</td></tr>
+          <tr><td>26</td><td>Prakarya</td><td>Menjelaskan langkah membuat kerajinan dari kertas lipat</td><td><span class="badge-level c3">C3</span></td><td>Uraian</td><td>26</td></tr>
+          <tr><td>27</td><td>Seni rupa</td><td>Menjelaskan perbedaan garis lurus dan garis lengkung</td><td><span class="badge-level c3">C3</span></td><td>Uraian</td><td>27</td></tr>
+          <tr><td>28</td><td>Seni musik</td><td>Menyebutkan tiga alat musik ritmis sederhana</td><td><span class="badge-level c3">C3</span></td><td>Uraian</td><td>28</td></tr>
+          <tr><td>29</td><td>Kesehatan & seni</td><td>Menjelaskan pentingnya mencuci tangan sebelum berkarya</td><td><span class="badge-level c4">C4</span></td><td>Uraian</td><td>29</td></tr>
+          <tr><td>30</td><td>Apresiasi karya</td><td>Menyebutkan dua manfaat membuat karya seni bagi kesehatan</td><td><span class="badge-level c4">C4</span></td><td>Uraian</td><td>30</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="note"><i class="fas fa-lightbulb"></i><div><strong>Level kognitif SBP:</strong> C1 mengingat · C2 memahami · C3 menerapkan · C4 menganalisis. Logo angka 18 bertema medis merefleksikan keterkaitan seni, kreativitas, dan kesehatan. 🩺🎨</div></div>
+  </div>
+
+  <!-- Footer -->
+  <div style="text-align: center; margin-top: 2rem; font-size: 0.9rem; color: #8a7fb8; font-weight: 600;">
+    ⭐ MI Al Iman · Kelas 3A · STS Ganjil 2026/2027 ⭐
+  </div>
+</div>
+
+<script>
+  (function() {
+    const tabs = document.querySelectorAll('.tab-btn');
+    const panels = document.querySelectorAll('.panel');
+
+    tabs.forEach(btn => {
+      btn.addEventListener('click', function() {
+        const target = this.dataset.panel;
+        tabs.forEach(b => b.classList.remove('active'));
+        panels.forEach(p => p.classList.remove('active'));
+        this.classList.add('active');
+        document.getElementById('panel-' + target).classList.add('active');
+        // scroll to top of container on mobile
+        if (window.innerWidth < 600) {
+          document.querySelector('.glass-container').scrollIntoView({behavior:'smooth', block:'start'});
+        }
+      });
+    });
+  })();
+</script>
+</body>
+</html>
